@@ -1,0 +1,97 @@
+@import './reset.css';
+body {
+  position: relative;
+}
+
+/* Modal */
+#modal {
+  position: absolute;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+#modal.active {
+  display: block;
+}
+
+#modal #exit-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#modal .iframe-container {
+  position: absolute;
+  width: 80%;
+  padding-top: 56.25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#modal .iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Content */
+#container-outer {
+  height: 100vh;
+  background: url('../img/hero_img_01.jpg');
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+#container-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container-inner h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.25;
+  padding-bottom: 30px;
+}
+
+#container-inner .button-container {
+  text-align: center;
+}
+
+#container-inner .button-container button {
+  font-size: 1.25rem;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #555;
+}
+
+@media screen and (max-width: 780px) {
+  #container-outer {
+    background: url('../img/Hero_img_mobile_01.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #container-inner {
+    width: 80%;
+    top: 60%;
+  }
+
+  #container-inner h1 {
+    font-size: 1.5rem;
+  }
+}

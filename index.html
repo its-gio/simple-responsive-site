@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico"/>
+  <title>Simple Responsive Site</title>
+</head>
+<body>
+  <!-- Modal -->
+  <section id="modal">
+    <button id="exit-modal" onclick="toggleModal()">X</button>
+    <div class="iframe-container">
+      <iframe src="https://www.youtube.com/embed/NBppslasYOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section id="container-outer">
+    <div class="content" id="container-inner">
+      <h1>The world's first independent developer and distributor of video console games & one of the largest third party video game publishers in the world.</h1>
+      <div class="button-container">
+        <button onclick="toggleModal()">Learn More</button>
+      </div>
+    </div>
+  </section>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
