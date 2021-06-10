@@ -82,6 +82,8 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   color: #555;
+  background-image: linear-gradient(#aaa, #eee);
+  border: none;
 }
 
 @media screen and (max-width: 780px) {
